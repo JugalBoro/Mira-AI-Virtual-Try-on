@@ -92,7 +92,7 @@ export const StyleAssistant: React.FC = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                 placeholder="Ask for advice..."
-                className="flex-1 border-gray-200 border rounded-none p-2 text-sm focus:outline-none focus:border-black"
+                className="flex-1 bg-white text-gray-900 placeholder-gray-400 border-gray-200 border rounded-none p-2 text-sm focus:outline-none focus:border-black"
               />
               <button 
                 onClick={handleSend}
