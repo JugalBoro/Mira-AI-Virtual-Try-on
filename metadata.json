@@ -1,0 +1,7 @@
+{
+  "name": "MIRRA - AI Virtual Fitting Room",
+  "description": "A premium AI-powered virtual fitting room experience allowing users to try on luxury fashion items using generative AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
