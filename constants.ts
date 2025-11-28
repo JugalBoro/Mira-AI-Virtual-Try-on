@@ -1,3 +1,4 @@
+
 import { Product } from './types';
 
 export const MOCK_PRODUCTS: Product[] = [
@@ -30,7 +31,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Noir Leather Trench',
     description: 'Full-length black leather trench coat with a belted waist and wide lapels. Matrix inspired chic.',
     price: 2100,
-    image: 'https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=800',
     category: 'outerwear'
   },
   {
@@ -102,7 +103,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Scarlet Satin Midi',
     description: 'A bold red satin midi dress with a high slit and cowl neckline.',
     price: 720,
-    image: 'https://images.unsplash.com/photo-1596783437088-6189535310a3?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=800',
     category: 'dress'
   },
   {
@@ -110,7 +111,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Camel Wool Cardigan',
     description: 'Cozy, oversized knit cardigan in a rich camel tone.',
     price: 240,
-    image: 'https://images.unsplash.com/photo-1624835655648-5c421712a45d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?auto=format&fit=crop&q=80&w=800',
     category: 'top'
   },
   {
@@ -118,7 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Pleated Wide Leg Pants',
     description: 'Flowy, pleated wide-leg trousers in a soft dove grey.',
     price: 290,
-    image: 'https://images.unsplash.com/photo-1509551383103-0f8cd0e5e8e9?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800',
     category: 'bottoms'
   },
   {
@@ -126,7 +127,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Shearling Aviator Jacket',
     description: 'Classic leather aviator jacket with warm shearling lining.',
     price: 1800,
-    image: 'https://images.unsplash.com/photo-1551488852-d81a4dcd6963?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&q=80&w=800',
     category: 'outerwear'
   }
 ];
