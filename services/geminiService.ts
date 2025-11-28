@@ -60,6 +60,42 @@ export const generateTryOn = async (
 };
 
 /**
+ * Generates a stylist review for the generated look.
+ */
+export const getStylistReview = async (
+  imageBase64: string,
+  productName: string
+): Promise<string> => {
+  try {
+    const cleanBase64 = imageBase64.replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, '');
+
+    const response = await ai.models.generateContent({
+      model: MODEL_CHAT,
+      contents: {
+        parts: [
+          {
+            text: `You are a high-end fashion stylist for MIRRA. A user just tried on the "${productName}" virtually. 
+                   Look at this photo of them. Provide a 1-2 sentence sophisticated, encouraging, and specific comment about how it fits them or how the style suits them. 
+                   Be chic and positive.`
+          },
+          {
+            inlineData: {
+              mimeType: 'image/jpeg',
+              data: cleanBase64
+            }
+          }
+        ]
+      }
+    });
+
+    return response.text || "You look absolutely stunning in this piece.";
+  } catch (error) {
+    console.error("Stylist Review Error:", error);
+    return "A truly timeless look.";
+  }
+};
+
+/**
  * Chat with the Fashion Assistant.
  */
 export const sendChatMessage = async (
